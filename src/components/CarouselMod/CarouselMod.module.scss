@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+.carousel {
+  font-family: $font;
+
+  &__item {
+    &__imgContainer {
+      width: 100%; /* Ajuste a largura conforme necessário */
+      height: 500px; /* Ajuste a altura máxima da imagem */
+      overflow: hidden; /* Oculta o conteúdo excedente */
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      div {
+        position: absolute; /* Define a posição absoluta para o gradiente */
+        bottom: 0; /* Posiciona o gradiente na parte de baixo */
+        left: 0;
+        width: 100%;
+        height: 250px; /* Ajuste a altura do gradiente conforme necessário */
+        background-image: linear-gradient(
+          transparent,
+          rgba(0, 0, 0, 0.7)
+        ); /* Define o gradiente */
+      }
+    }
+  }
+
+  &__button{
+    margin-top: 20px;
+    background-color: $black !important;
+    border: $black;
+  }
+  &__button:hover{
+    background-color: #008000 !important;
+    border: rgba(0, 0, 0, 0);
+  }
+  
+
+  // style to mobile
+  @media screen and (max-width: 1000px) {
+    &__item {
+      &__imgContainer {
+        height: 100%; /* Ajuste a altura máxima da imagem */
+      }
+    }
+  }
+}
