@@ -12,7 +12,7 @@ import image3 from "../../assets/images/studio3.png";
 
 function CarouselMod() {
   return (
-    <Carousel indicators={false} controls={true} className={style.carousel}>
+    <Carousel indicators={false} controls={false} className={style.carousel}>
       
       <Carousel.Item className={style.carousel__item}>
         <div className={style.carousel__item__imgContainer}>
@@ -50,13 +50,14 @@ function CarouselMod() {
           <div></div>
         </div>
         
-        <Carousel.Caption>
+        <Carousel.Caption className={style.carousel__item__caption}>
           <h2>Inovação e qualidade em um só lugar.</h2>
           <Button href="https://www.seusite.com" className={style.carousel__button}>
             <BsWhatsapp style={{marginRight: 10, marginBottom: 3}} size={20}/>
             Mande uma mensagem!
           </Button>{" "}
         </Carousel.Caption>
+
       </Carousel.Item>
     </Carousel>
   );

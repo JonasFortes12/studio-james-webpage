@@ -3,6 +3,7 @@
   font-family: $font;
 
   &__item {
+    
     &__imgContainer {
       width: 100%; /* Ajuste a largura conforme necessário */
       height: 500px; /* Ajuste a altura máxima da imagem */
@@ -26,18 +27,20 @@
         ); /* Define o gradiente */
       }
     }
+    p {
+      font-size: 20px
+    }
   }
 
-  &__button{
+  &__button {
     margin-top: 20px;
     background-color: $black !important;
     border: $black;
   }
-  &__button:hover{
+  &__button:hover {
     background-color: #008000 !important;
     border: rgba(0, 0, 0, 0);
   }
-  
 
   // style to mobile
   @media screen and (max-width: 1000px) {
@@ -47,4 +50,26 @@
       }
     }
   }
+
+  @media screen and (max-width: 430px) {
+    &__item {
+      h2 {
+        font-size: larger;
+      }
+
+      p {
+        display: none;
+      }
+
+      &__caption {
+        padding: 0;
+      }
+    }
+
+    &__button {
+      // margin-top: 0px;
+      font-size: small;
+    }
+  }
+
 }
