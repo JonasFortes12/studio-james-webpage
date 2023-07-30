@@ -4,6 +4,8 @@
 .item {
   display: flex;
   color: $gray;
+  justify-items: center;
+  align-items: center;
 
   a {
     font-family: $font;

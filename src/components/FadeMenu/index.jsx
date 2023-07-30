@@ -9,7 +9,7 @@ import NavSection from "../NavSection";
 
 import { TiHeartOutline } from "react-icons/ti";
 import { LuStars } from "react-icons/lu";
-import { BsWhatsapp, BsAward } from "react-icons/bs";
+import { BsWhatsapp, BsPerson  } from "react-icons/bs";
 
 function FadeMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -45,7 +45,7 @@ function FadeMenu() {
       >
 
         <MenuItem onClick={handleClose}>
-          <NavSection text="SOBRE" icon={<BsAward />} color="#312C2D"/>
+          <NavSection text="SOBRE" icon={<BsPerson/>} color="#312C2D"/>
         </MenuItem>
 
         <MenuItem onClick={handleClose}>
@@ -57,7 +57,7 @@ function FadeMenu() {
         </MenuItem>
 
         <MenuItem onClick={handleClose}>
-          <NavSection text="CONTATOS" icon={<BsWhatsapp />} color="#312C2D"/>
+          <NavSection text="CONTATOS" icon={<BsWhatsapp size={15}/>} color="#312C2D"/>
         </MenuItem>
 
       </Menu>
