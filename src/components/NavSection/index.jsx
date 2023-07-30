@@ -12,6 +12,8 @@ function NavSection({icon, text, color = '$gray', href = ''}) {
       {icon}
       <a href={href} style={styleProp} >{text}</a>
       
+      <div></div>
+      
     </li>
   )
 
