@@ -27,8 +27,6 @@ function About() {
         </div>
 
         <div className={style.about__desktop__right}>
-
-          <div className={style.about__desktop__right__lineV}></div>
           
           <div className={style.about__desktop__right__img}>
             <img src={aboutImage} alt="foto_da_seção_sobre" />
