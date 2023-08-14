@@ -4,6 +4,7 @@ import CarouselMod from "../../components/CarouselMod";
 import NavBar from "../../components/NavBar";
 import PageSection from '../../components/PageSection';
 import About from '../../components/About';
+import Servic from '../../components/Servic';
 
 function HomePage() {
   return (
@@ -13,8 +14,10 @@ function HomePage() {
     
       <main className={style.mainSection}>
         <PageSection title={'CONHEÇA'} component={<About/>} />
-        <PageSection title={'SERVIÇOS'} />
+        <PageSection title={'SERVIÇOS'} component={<Servic/>} />
         <PageSection title={'RESULTADOS'} />
+
+        
       </main>
 
     </>
