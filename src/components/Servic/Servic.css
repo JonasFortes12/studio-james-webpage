@@ -1,3 +1,4 @@
+
 .container {
   max-width: 95vw;
   /* padding: 4rem 1rem; */
@@ -5,23 +6,53 @@
 }
 
 .swiper_container {
-  height: 20rem;
+  height: 30rem;
   /* padding: 2rem 0; */
   position: relative;
 }
 
 .swiper-slide {
-  width: 30rem;
-  height: 20rem;
+  width: 20rem;
+  height: 25rem;
   position: relative;
 }
 
-.swiper-slide img {
-  width: 30rem;
-  height: 20rem;
-  border-radius: 2rem;
-  object-fit: cover;
+.slide-content{
+  position: relative;
+  overflow: hidden;
 }
+
+.slide-content img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Redimensiona a imagem para preencher a div */
+  z-index: 1; /* Coloca a imagem acima do gradiente */
+  width: 20rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+
+.slide-content .gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px; /* Altura do gradiente */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)); /* Gradiente na parte inferior */
+}
+
+.slide-content .text {
+  font-family: 'Poppins';
+  font-weight: 300;
+  letter-spacing: 4px;
+  position: absolute;
+  bottom: 20px; /* Ajuste a posição vertical do texto conforme necessário */
+  left: 20px; /* Ajuste a posição horizontal do texto conforme necessário */
+  color: white; /* Cor do texto para maior contraste com o gradiente */
+  z-index: 2; /* Coloca o texto acima do gradiente */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
 
 
 @media (max-width: 770px) {
