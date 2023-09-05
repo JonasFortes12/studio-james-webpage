@@ -17,12 +17,12 @@
   position: relative;
 }
 
-.slide-content{
+.slide-content {
   position: relative;
   overflow: hidden;
 }
 
-.slide-content img{
+.slide-content img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Redimensiona a imagem para preencher a div */
@@ -38,11 +38,15 @@
   left: 0;
   right: 0;
   height: 200px; /* Altura do gradiente */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)); /* Gradiente na parte inferior */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.9)
+  ); /* Gradiente na parte inferior */
 }
 
 .slide-content .text {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 300;
   letter-spacing: 4px;
   position: absolute;
@@ -52,8 +56,6 @@
   z-index: 2; /* Coloca o texto acima do gradiente */
   text-align: center; /* Centraliza o texto horizontalmente */
 }
-
-
 
 @media (max-width: 770px) {
   .swiper_container {
@@ -67,8 +69,11 @@
     width: 20rem !important;
     height: 15rem !important;
   }
-}
 
+  .container {
+    margin-bottom: 40px;
+  }
+}
 
 @media (max-width: 450px) {
   .swiper_container {
@@ -83,7 +88,6 @@
     height: 15rem !important;
   }
 }
-
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
@@ -162,4 +166,43 @@
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
+}
+
+/*catalog button*/
+
+.btn_catalog {
+  font-family: "Poppins";
+  background-color: #FFF;
+  color: #312C2D;
+  font-weight: 500;
+  border-color: #312C2D;
+  border-top-width: 5px;
+  font-size: 20px;
+}
+
+.btn_catalog:hover {
+  background-color: #312C2D;
+  border-color: #312C2D;
+  color: white;
+}
+
+.btn_catalog:active {
+  background-color: #312C2D !important;
+  border-color: #312C2D !important;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .btn_catalog {
+    width: 150px;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .btn_catalog {
+    width: 120px;
+    font-size: 14px;
+  }
 }
